@@ -14,7 +14,7 @@ router.post("/add", async (req, res) => {
     description,
   };
   await pool.query("INSERT INTO book set ?", [newBook]);
-
+  req.flash("success", "Book save successfully G32");
   res.redirect("/links");
 });
 
@@ -26,7 +26,32 @@ router.get("/", async (req, res) => {
 
 router.get("/delete/:id", async (req, res) => {
   const { id } = req.params;
-  pool.query("DELETE FROM book where id_book = ?", { id });
+  await pool.query("DELETE FROM book where id_book = ?", [id]);
+  req.flash("success", "Book delete successfully G32");
   res.redirect("/links");
 });
+
+router.get("/edit/:id", async (req, res) => {
+  const { id } = req.params;
+  const books = await pool.query("SELECT * FROM book where id_book = ?", [id]);
+  res.render("links/edit", { books: books });
+});
+
+router.post("/edit/:id", async (req, res) => {
+  const { id } = req.params;
+  const { title, description, author } = req.body;
+  const newBook = {
+    title,
+    description,
+    author,
+  };
+  await pool.query("UPDATE book set ? WHERE id_book = ?", [newBook, id]);
+  req.flash("success", "Book update successfully G32");
+  res.redirect("/links");
+});
+
+router.get("/start", (req, res) => {
+  res.render("start");
+});
+
 module.exports = router;

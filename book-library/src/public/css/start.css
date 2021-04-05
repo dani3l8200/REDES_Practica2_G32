@@ -1,0 +1,56 @@
+  
+.welcome-css {
+    color: gold;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: lightslategrey;
+  }
+  
+  .title-css {
+      font-size: xx-large;
+  }
+  
+  .deparment-css {
+      font-size: xx-large;
+      margin-top: -10px;
+  }
+  
+  .group-css {
+      font-size: xx-large;
+      margin-top: -10px;
+  }
+  
+  .table {
+      position: relative;
+      padding-left: 50% !important; /* Added important here */
+      border-color: black;
+      border: 2px solid #000000;
+      color: black;
+  }
+  
+  .titles-table-css {
+      text-align: center;
+      background-color: black;
+      border: 2px solid black;
+      color: white;
+  }
+  .boders-table {
+      border: 2px solid black;
+  }
+  
+  .body-table {
+      text-align: center;
+  }
+  
+  .row-color-odd {
+      background-color: lightblue;
+  }
+  
+  .row-color-even {
+      background-color: chartreuse;
+  }
+  
+  .tema-css {
+      background-color: aqua;
+      text-align: center;
+  }

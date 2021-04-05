@@ -1,0 +1,29 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card bg-dark border border-dark">
+                <div class="card-body">
+                    <form action="/links/edit/{{books.id_book}}" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="title" class="form-control bg-dark text-light" placeholder="Title"
+                                value="{{books.title}}" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="author" class="form-control bg-dark text-light"
+                                placeholder="Author" value="{{books.author}}">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="description" rows="2" class="form-control bg-dark text-light"
+                                placeholder="Description">{{books.description}}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Save
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
