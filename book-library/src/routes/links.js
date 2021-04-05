@@ -33,8 +33,10 @@ router.get("/delete/:id", async (req, res) => {
 
 router.get("/edit/:id", async (req, res) => {
   const { id } = req.params;
+  
   const books = await pool.query("SELECT * FROM book where id_book = ?", [id]);
-  res.render("links/edit", { books: books });
+  // console.log(books);
+  res.render("links/edit", { books: books[0] });
 });
 
 router.post("/edit/:id", async (req, res) => {
@@ -51,7 +53,7 @@ router.post("/edit/:id", async (req, res) => {
 });
 
 router.get("/start", (req, res) => {
-  res.render("start");
+  res.render("links/start");
 });
 
 module.exports = router;

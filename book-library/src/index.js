@@ -47,6 +47,4 @@ app.use("/links", require("./routes/links"));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.listen(app.get("port"), () => {
-  console.log("Server on Port", app.get("port"));
-});
+app.listen(4000,'192.168.132.131');
