@@ -1,0 +1,28 @@
+Apr 05 11:56:10.234 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 05 11:56:10.235 HYPERVISOR: Started on IP = localhost, TCP port = 54353.
+Apr 05 11:56:10.259 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 05 11:56:10.259 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Yovany Samines\Documents\workGit\REDES_Practica2_G32\topologia1\project-files\dynamips 
+Apr 05 11:56:10.266 GENERAL: working_dir=C:\Users\Yovany Samines\Documents\workGit\REDES_Practica2_G32\topologia1\project-files\dynamips
+Apr 05 11:56:10.266 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Yovany Samines\Documents\workGit\REDES_Practica2_G32\topologia1\project-files\dynamips\7371ee8c-c2ee-4759-8885-ae05cc7f290d 
+Apr 05 11:56:10.267 GENERAL: working_dir=C:\Users\Yovany Samines\Documents\workGit\REDES_Practica2_G32\topologia1\project-files\dynamips\7371ee8c-c2ee-4759-8885-ae05cc7f290d
+Apr 05 11:56:10.267 HYPERVISOR: exec_cmd: vm create ESW1 1 c3725 
+Apr 05 11:56:10.269 VM: VM ESW1 created.
+Apr 05 11:56:10.270 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5004 
+Apr 05 11:56:10.270 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Apr 05 11:56:10.270 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Apr 05 11:56:10.271 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
+Apr 05 11:56:10.271 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 05 11:56:10.272 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60bf8ba0 
+Apr 05 11:56:10.273 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/Yovany Samines/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Apr 05 11:56:10.274 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c201.3db8.0000 
+Apr 05 11:56:10.275 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Apr 05 11:56:10.275 HYPERVISOR: exec_cmd: vm set_ram ESW1 228 
+Apr 05 11:56:10.276 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 05 11:56:10.276 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Apr 05 11:56:11.602 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 05 11:56:11.603 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Apr 05 11:56:11.606 HYPERVISOR: exec_cmd: vm delete ESW1 
+Apr 05 11:56:11.606 VM: VM ESW1 destroyed.
+Apr 05 11:56:11.609 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 05 11:56:11.795 HYPERVISOR: Stopped.
+Apr 05 11:56:11.795 GENERAL: reset done.
